@@ -1,5 +1,6 @@
 const request = require('supertest');
 const app = require('./app');
+const supertest = require('supertest');
 
 
 describe('GET /', () => {
@@ -8,3 +9,4 @@ describe('GET /', () => {
     expect(res.text).toEqual('Hello World');
     });
 });
+
